@@ -6,4 +6,4 @@ for (let i = 0; i <5; i++) {
 }
 console.log(tableau);
 
-//Le code  classe la constante beta et le compte dans le tableau jusqu'a 5 fois 
+//Le code copie les élements de la constante beta et le compte dans le tableau jusqu'a 5 fois
