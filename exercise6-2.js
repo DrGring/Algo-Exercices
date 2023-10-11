@@ -1,1 +1,9 @@
-//Algo qui déclare et remplisse un tableau  contenena
+let tableaux = [];
+let latinVoyelle = ['a', 'e', 'i', 'o', 'u', 'y'];
+
+for (let i = 0; i < 6; i++) {
+
+    tableaux[i] = latinVoyelle[i];
+}
+
+console.log(tableaux);
