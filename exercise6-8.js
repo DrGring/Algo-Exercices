@@ -3,44 +3,37 @@
 // que l'utilisateur doit savoir le nombre de valeur a saisir et l'effectuera ensuite  
 // le programme affichera le nombre de valeur négatives et positives 
 
-let monTableau = [];
-const readline = require('readline');
-const interfaceLecture = readline.createInterface({
+let monTableau = /* new Array(3) */[];
+/* const readline = require('readline');
+const interfAceLecture = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+}); */
+
+const rl = require('readline');
+const interfaceLecture = rl.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-interfaceLecture.question("Veuillez saisir le nombres de valeurs a saisir : ", function (reponse) {
-    console.log("Vous avez saisis : " + reponse);
-    interfaceLecture.close();
-});
-
-let valeursPositives = 0;
-let valeursNegatives = 0;
 
 
-/* let messageValeurs = ("Veuillez saisir le nombres de valeurs a saisir : ");
-let SaisisValeur = parseInt(messageValeurs);
-
-let valeursPositives=0;
-let valeursNegatives=0;
-
-for (let i = 0; i < SaisisValeur; i++) {
-
-    const valeur = parseFloat(("Veuillez entrer la valeur " +(i+1)+ ":" ));
-
-    if (!isNaN(valeur)) {
-        if (valeur>0) {
-            valeursPositives++;
-        }else if (valeur<0) {
-            valeursNegatives++
-        }
-        monTableau.push(valeur);
-    }
-
-}
-
-console.log("Les valeurs saisies : " + monTableau.join(", "));
-console.log("Nombre de valeurs positives : " + valeursPositives);
-console.log("Nombre de valeurs négatives : " + valeursNegatives);
+function afficherSaisirValeur() {/* 
+ interfAceLecture.question("Veuillez saisir le nombres de valeurs a saisir : ", (valeur0)=> {
  */
+  for (let i = 0; i<3; i++) {
+    interfaceLecture.question("saisir la valeur N°" + (i + 1) + ":", (valeur)=> {
+    monTableau.push(valeur);
+    console.log("Vous avez saisis : " + valeur);
+
+    interfaceLecture.close();
+    console.log(monTableau);
+    })    
+  }  
+}
+/* )
+console.log("Vous avez saisis : " + valeur0 +" éléments");
+  interfAceLecture.close();
+} */
+
+afficherSaisirValeur(0);
