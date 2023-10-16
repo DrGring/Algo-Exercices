@@ -9,7 +9,7 @@ for (let i = 0; i < 9; i++) {
     if (valeur>0) {
         console.log("vous avez saisis " +valeur+ " comme valeur positif ");
         valPosi.push(valeur)
-    }else if (valNeg<0) {
+    }else if (valeur<0) {
         console.log("Vous avez saisis " +valeur+ " comme valeur négatif" );
         valNeg.push(valeur)
     }else {
