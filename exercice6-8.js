@@ -21,7 +21,9 @@ console.log(tableauValeur);
 console.log("les valeurs positives : " + valPosi);
 console.log("le(s) valeur(s) négatifs(ves) : " + valNeg);
 
-alert(`Les valeurs saisis sont : ${tableauValeur},  ${valPosi} commes poitives et ${valNeg} commes négatives`);
+alert(`Les valeurs saisis sont : ${tableauValeur}`);
+alert(`Les valeurs négatifs disctincts sont : ${valNeg} `)
+alert(`les valeurs positifs sont : ${valPosi}`)
 
 
 // Un algorithme qui permet de saisir un nombre 
