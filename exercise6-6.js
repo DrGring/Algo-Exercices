@@ -1,11 +1,11 @@
-const alpha = [];
+const suite = [];
 
-alpha[0] = 1;
-alpha[1] = 1;
+suite[0] = 1;
+suite[1] = 1;
 
 for (let i = 2; i <7; i++) {
-    alpha[i] = alpha[i-1] + alpha[i-1]
+    suite[i] = suite[i-1] + suite[i-2]
 }
 for (let i = 0; i < 7; i++) {
-    console.log(alpha[i]);
+    console.log(suite[i]);
 }
