@@ -9,7 +9,7 @@ for (let i = 0; i <6; i++) {
 }
 //crée un tableau vide appelé alpha,
 //affecter la valeur 1 à alpha[0], 
-//En utilisant une boucle for, on parcours les indices de 1 à 5 (inclus) du tableau alpha. 
+//En utilisant une boucle for, on parcours les indices de 1 à 6 (inclus) du tableau alpha. 
 // Et a chaque boucle on calcules la valeur de alpha[k] en ajoutant 2 à la valeur de l'élément précédent.
 
-//utilisons une autre boucle for pour parcourir les indices de 0 à 5 du tableau alpha 
+//utilisons une autre boucle for pour parcourir les indices de 0 à 6 du tableau alpha 
