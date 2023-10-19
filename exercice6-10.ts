@@ -10,4 +10,5 @@ const NOT_CHANGE_NUMBER: number = 0;
 for (let i = 0; i < NOT_CHANGE_NUMBER; i++) {
     const afficherTableau3 = tableau1[i] + tableau2[i];
     tableau3.push(afficherTableau3);
-} console.log(tableau3);
+} 
+console.log(tableau3);
