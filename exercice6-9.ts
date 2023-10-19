@@ -1,38 +1,35 @@
-let tableauValeur:number[] = [];
-let valPosi:number[] = [];
-let valNeg:number[] = [];
-let somme:number = 0;
-/* 
-let str: string = "431"; 
-console.log(typeof str); 
-let num = Number(str); 
-console.log(typeof num); 
- */
+let tableauValeur: number[] = [];
+let valPosi: number[] = [];
+let valNeg: number[] = [];
+let somme: number = 0;
+let NUMERO_DIX: number = 10;
 
-for (let i = 0; i < 9; i++) {
-    const valeurSaisie:number = prompt("Saisisez la valeur N°" +(i + 1 )+ ": " );
+for (let i = 0; i < NUMERO_DIX; i++) {
 
-    tableauValeur.push(valeurSaisie)
-    
-    if (valeurSaisie>0) {
-        console.log("vous avez saisis " +valeurSaisie+ " comme valeur positif ");
-        valPosi.push(valeurSaisie)
-    }else if (valeurSaisie<0) {
-        console.log("Vous avez saisis " +valeurSaisie+ " comme valeur négatif" );
-        valNeg.push(valeurSaisie)
-    }else {
-        console.log("Vous aviez Saisis une valeurs null");
+  const valeurSaisieaParser: string | null = prompt("Saisisez la valeur N°" + (i + 1) + ": ");
+
+  if (valeurSaisieaParser/*  !== null */) {
+
+    const valeurSaisieParser: number = parseInt(valeurSaisieaParser)/* +valeurSaisieaParser */;
+    tableauValeur.push(valeurSaisieParser)
+
+    if (valeurSaisieParser > 0) {
+      valPosi.push(valeurSaisieParser)
+    }else{
+      valNeg.push(valeurSaisieParser)
     }
-}   
-for (let i = 0; i <tableauValeur.length; i++) {
-  somme += (tableauValeur[i]);
+  }
+}
+
+for (let i = 0; i < tableauValeur.length; i++) {
+  somme += tableauValeur[i];
 }
 
 console.log(tableauValeur);
-console.log("les valeurs positives : " + valPosi);
-console.log("le(s) valeur(s) négatifs(ves) : " + valNeg);
-console.log("la somme est de : " +somme) ;
+console.log("les valeurs positives : ", valPosi);
+console.log("le(s) valeur(s) négatifs(ves) : ", valNeg);
+console.log("la somme est de : ", somme);
 
-alert(`Les valeurs saisis sont : ${tableauValeur}`);
-alert(`Les valeurs négatifs disctincts sont : ${valNeg} `)
-alert(`les valeurs positifs sont : ${valPosi}`)
+alert(`Les valeurs saisis sont : ${JSON.stringify(tableauValeur)}`);
+alert(`Les valeurs négatifs disctincts sont : ${JSON.stringify(valNeg)} `)
+alert(`les valeurs positifs sont : ${JSON.stringify(valPosi)}`)
