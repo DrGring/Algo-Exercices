@@ -1,4 +1,12 @@
-let tab1: number[] = [4, 8, 12];
+//Ecrire un algo qui permet à l'utilisateur de saisir une valeur numérique quelconque  et ensuite affichcer ses valeurs +1 dans le nouveau tableau 
+let valeuraSaisir: number[] = []
+let newTableauValeurSaisis: number[] = []
+
+
+
+
+
+/* let tab1: number[] = [4, 8, 12];
 let tab2: number[] = [3, 6, 0];
 
 let sum = 0;
@@ -30,4 +38,5 @@ schtroumpf = sumTableau1 * sumTableau2;
 
 console.log("sumTableau1: ", sumTableau1);
 console.log("sumTableau2: ", sumTableau2);
-console.log("schtroumpf: ", schtroumpf);
+console.log("schtroumpf: ", schtroumpf); */
+
