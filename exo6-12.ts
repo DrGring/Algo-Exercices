@@ -6,6 +6,7 @@ let newTableauValeurSaisis: number[] = []
 
 
 
+
 /* let tab1: number[] = [4, 8, 12];
 let tab2: number[] = [3, 6, 0];
 
