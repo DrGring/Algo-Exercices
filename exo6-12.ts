@@ -10,4 +10,4 @@ for (let i = 0; i < NOT_CHANGE; i++) {
     const valeurSaisieParser: number = parseInt(valeurSaisieaParser)/* +valeurSaisieaParser */;
     valeuraSaisir.push(valeurSaisieParser + 1);
   }
-}console.log(valeuraSaisir);
+}console.log("valeur à Saisir +1 : ", valeuraSaisir);
